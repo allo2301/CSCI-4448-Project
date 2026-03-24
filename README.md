@@ -19,7 +19,7 @@ if/else logic checking who the player is, it just calls
 strategy.chooseMove() and gets back a move. 
 
 ### 2. Observer Pattern
-Found in: `GameObserver.java`, `ConsoleObserver.java`, `FileObserver.java`,
+Found in: `GameObserver.java`, `ConsoleObserver.java`,
 `PlaceMoveCommand.java`
 
 PlaceMoveCommand holds a List<GameObserver> and calls onMove() on each
