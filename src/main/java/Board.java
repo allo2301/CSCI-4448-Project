@@ -43,20 +43,33 @@ public class Board {
 
     public void print() {
         System.out.println();
-        System.out.print("    ");
-        for (int c = 0; c < size; c++) System.out.print(c + "   ");
+        System.out.print("   ");
+        for (int c = 0; c < size; c++) {
+            System.out.print(c + "   ");
+        }
         System.out.println();
-        System.out.println("  ┌───" + "┬───".repeat(size - 1) + "┐");
+
         for (int r = 0; r < size; r++) {
-            System.out.print(r + " │");
+            System.out.print(r + "  ");
             for (int c = 0; c < size; c++) {
-                System.out.print(" " + cells[r][c].display() + " │");
+                System.out.print(cells[r][c]);
+                if (c < size - 1) {
+                    System.out.print(" | ");
+                }
             }
             System.out.println();
-            if (r < size - 1)
-                System.out.println("  ├───" + "┼───".repeat(size - 1) + "┤");
+
+            if (r < size - 1) {
+                System.out.print("  ");
+                for (int c = 0; c < size; c++) {
+                    System.out.print("---");
+                    if (c < size - 1) {
+                        System.out.print("+");
+                    }
+                }
+                System.out.println();
+            }
         }
-        System.out.println("  └───" + "┴───".repeat(size - 1) + "┘");
         System.out.println();
     }
 

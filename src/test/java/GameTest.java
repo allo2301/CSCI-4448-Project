@@ -120,7 +120,7 @@ public class GameTest {
             int[] move = current.chooseMove(board);
             new PlaceMoveCommand(board, current, move[0], move[1], observers).execute();
 
-            if (board.hasWinner(current.mark)) {
+            if (board.hasWinner(current.getMark())) {
                 for (GameObserver obs : observers) obs.onGameOver(current);
                 break;
             }
@@ -161,7 +161,7 @@ public class GameTest {
             int[] move = current.chooseMove(board);
             new PlaceMoveCommand(board, current, move[0], move[1], observers).execute();
 
-            if (board.hasWinner(current.mark)) {
+            if (board.hasWinner(current.getMark())) {
                 for (GameObserver obs : observers) obs.onGameOver(current);
                 break;
             }

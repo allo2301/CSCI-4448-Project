@@ -9,13 +9,14 @@ public class ConsoleObserver implements GameObserver {
     @Override
     public void onMove(Player player, int r, int c, int[] removed) {
         // print what move was made, print removed notice if not null, print board
-        System.out.printf("%s placed at (%d, %d)%n", player.getName(), r, c);
+        System.out.println(player.getName() + " placed at (" + r + ", " + c + ")");
  
         if (removed != null) {
             System.out.printf("  → Removed piece from (%d, %d)%n", removed[0], removed[1]);
         }
  
-        System.out.println(board);
+        //System.out.println(board);
+        board.print();
     }
 
     @Override
@@ -24,7 +25,7 @@ public class ConsoleObserver implements GameObserver {
         if (winner == null) {
             System.out.println("Game over — it's a draw!");
         } else {
-            System.out.printf("Game over — %s wins!%n", winner.getName());
+            System.out.println("Game over! " + winner.getName() + " wins.");
         }
     }
 }

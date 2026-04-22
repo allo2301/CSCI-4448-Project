@@ -17,9 +17,9 @@ public class PlaceMoveCommand implements MoveCommand {
 
     @Override
     public void execute() {
-        board.place(r, c, player.mark);
+        board.place(r, c, player.getMark());
         for (GameObserver observer : observers) {
-            observer.onMove(player, r, c);
+            observer.onMove(player, r, c, null);
         }
     }
 }
