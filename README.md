@@ -28,7 +28,7 @@ Found in: `GameObserver.java`, `ConsoleObserver.java`,
 PlaceMoveCommand holds a List<GameObserver> and calls onMove() on each
 one after a mark is placed, and Main calls onGameOver() on each one when
 the game ends. ConsoleObserver handles all terminal output printing the
-move and redrawing the board. FileObserver handles persistence sdaving
+move and redrawing the board. FileObserver handles persistence saving
 every move and the final result to gamelog.txt.
 
 ### 3. Command Pattern
