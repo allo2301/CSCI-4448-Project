@@ -38,3 +38,28 @@ Every move is wrapped in a PlaceMoveCommand object that encapsulates the
 board, the player, the coordinates, and the list of observers to notify.
 Main just calls command.execute(), it has no knowledge of how a mark
 gets placed, how observers are notified, or any other move logic.
+
+### 4. Factory Method Pattern
+Found in: `PlayerFactory.java`, `GameFactory.java`, `Main.java`
+
+PlayerFactory.createHumanPlayer() and GameFactory.createGame() encapsulate
+the construction logic that would otherwise be sprawled across Main. Main
+describes what it wants — a human player with a given name and mark, a
+game with a given board and player list — without knowing how those objects
+are assembled. Adding an AI player later only requires a new method on
+PlayerFactory; Main does not change.
+
+### 5. Dependency Injection
+Found in: `PlayerFactory.java`, `GameFactory.java`, `Main.java`
+
+Every object receives its dependencies from the outside rather than
+creating them itself. Scanner is constructed once in Main and injected
+into PlayerFactory, which injects it further into HumanStrategy. Board
+is injected into GameFactory.createGame(), which injects it into
+ConsoleObserver internally. Nothing reaches out to instantiate its own
+dependencies, which makes each class independently testable by passing
+in a substitute at construction time.
+
+
+
+
