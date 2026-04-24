@@ -1,0 +1,14 @@
+Player 1 placed at (0, 0)
+Player 2 placed at (0, 1)
+Player 1 placed at (1, 0)
+Player 2 placed at (1, 1)
+Player 1 placed at (2, 0)
+Result: Player 1 wins
+----------
+Player 1 placed at (1, 1)
+Player 2 placed at (1, 0)
+Player 1 placed at (0, 0)
+Player 2 placed at (2, 0)
+Player 1 placed at (2, 2)
+Result: Player 1 wins
+----------

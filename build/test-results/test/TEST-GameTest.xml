@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2026-04-23T01:39:08.397Z" hostname="Reneshs-MacBook-Pro.local" time="0.067">
+<testsuite name="GameTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2026-04-24T15:54:46.827Z" hostname="Reneshs-MacBook-Pro.local" time="0.048">
   <properties/>
-  <testcase name="testBoardGet()" classname="GameTest" time="0.021"/>
-  <testcase name="testFullGameXWinsColumn()" classname="GameTest" time="0.002"/>
+  <testcase name="testBoardGet()" classname="GameTest" time="0.009"/>
+  <testcase name="testFullGameXWinsColumn()" classname="GameTest" time="0.001"/>
   <testcase name="testBoardIsEmpty_outOfBounds()" classname="GameTest" time="0.001"/>
-  <testcase name="testHumanStrategy_validInput()" classname="GameTest" time="0.008"/>
+  <testcase name="testHumanStrategy_validInput()" classname="GameTest" time="0.005"/>
   <testcase name="testMarkOpponent()" classname="GameTest" time="0.001"/>
-  <testcase name="testConsoleObserver_onMove_withRemoval()" classname="GameTest" time="0.008"/>
+  <testcase name="testConsoleObserver_onMove_withRemoval()" classname="GameTest" time="0.003"/>
   <testcase name="testBoardIsEmpty()" classname="GameTest" time="0.001"/>
   <testcase name="testBoardPlace_outOfBounds()" classname="GameTest" time="0.001"/>
-  <testcase name="testGamePlay_xWins()" classname="GameTest" time="0.002"/>
-  <testcase name="testMainMethod()" classname="GameTest" time="0.004"/>
+  <testcase name="testGamePlay_xWins()" classname="GameTest" time="0.003"/>
+  <testcase name="testMainMethod()" classname="GameTest" time="0.005"/>
   <testcase name="testBoardHasWinner_antiDiagonal()" classname="GameTest" time="0.001"/>
   <testcase name="testDrawGame()" classname="GameTest" time="0.001"/>
-  <testcase name="testMarkDisplay()" classname="GameTest" time="0.0"/>
+  <testcase name="testMarkDisplay()" classname="GameTest" time="0.001"/>
   <testcase name="testPlayerGetName()" classname="GameTest" time="0.0"/>
-  <testcase name="testRowWinDetected()" classname="GameTest" time="0.001"/>
-  <testcase name="testConsoleObserver_onGameOver_winner()" classname="GameTest" time="0.0"/>
-  <testcase name="testGamePlay_draw()" classname="GameTest" time="0.0"/>
+  <testcase name="testRowWinDetected()" classname="GameTest" time="0.0"/>
+  <testcase name="testConsoleObserver_onGameOver_winner()" classname="GameTest" time="0.001"/>
+  <testcase name="testGamePlay_draw()" classname="GameTest" time="0.001"/>
   <testcase name="testBoardPrint()" classname="GameTest" time="0.001"/>
   <testcase name="testConsoleObserver_onGameOver_draw()" classname="GameTest" time="0.001"/>
-  <testcase name="testDiagonalWinDetected()" classname="GameTest" time="0.0"/>
+  <testcase name="testDiagonalWinDetected()" classname="GameTest" time="0.001"/>
   <testcase name="testConsoleObserver_onMove_noRemoval()" classname="GameTest" time="0.0"/>
-  <testcase name="testHumanStrategy_occupiedCellRetry()" classname="GameTest" time="0.001"/>
-  <testcase name="testBoardRemove()" classname="GameTest" time="0.001"/>
+  <testcase name="testHumanStrategy_occupiedCellRetry()" classname="GameTest" time="0.0"/>
+  <testcase name="testBoardRemove()" classname="GameTest" time="0.0"/>
   <testcase name="testBoardHasWinner_column()" classname="GameTest" time="0.0"/>
   <testcase name="testHumanStrategy_invalidInputRetry()" classname="GameTest" time="0.001"/>
   <testcase name="testPlaceMoveCommandNotifiesObserver()" classname="GameTest" time="0.001"/>
